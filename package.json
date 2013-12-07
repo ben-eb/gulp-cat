@@ -1,0 +1,23 @@
+{
+  "name": "gulp-cat",
+  "version": "0.1.0",
+  "description": "Echo file(s) to the console.",
+  "license": "MIT",
+  "homepage": "https://github.com/ben-eb/gulp-cat",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "therealbenbriggs@hotmail.com",
+    "url": "http://beneb.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ben-eb/gulp-cat.git"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "event-stream": "~3.0.15"
+  },
+  "main": "index.js"
+}
