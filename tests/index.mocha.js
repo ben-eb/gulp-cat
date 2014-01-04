@@ -1,5 +1,5 @@
 /* jshint node: true */
-/* global describe, it, before, beforeEach, after, afterEach */
+/* global describe, it */
 
 'use strict';
 
@@ -71,7 +71,7 @@ describe('gulp-cat', function() {
         });
 
         stream.on('end', function() {
-          done();
+            done();
         });
 
         stream.write(fakeFile);
