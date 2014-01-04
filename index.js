@@ -1,10 +1,10 @@
-var PassThrough = require('stream').PassThrough
-;
+var PassThrough = require('stream').PassThrough;
 
 module.exports = function() {
     'use strict';
     var stream = new PassThrough({objectMode: true});
     stream.on('data', function(file) {
+      if(file.isNull()) return;
     
       if(file.isBuffer()) {
         process.stdout.write(file.contents);
