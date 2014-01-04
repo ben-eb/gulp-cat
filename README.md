@@ -1,10 +1,12 @@
-# gulp-cat
+# gulp-cat [![Build Status](https://travis-ci.org/ben-eb/gulp-cat.png?branch=master)](https://travis-ci.org/ben-eb/gulp-cat) [![NPM version](https://badge.fury.io/js/gulp-cat.png)](http://badge.fury.io/js/gulp-cat) [![Dependency Status](https://gemnasium.com/ben-eb/gulp-cat.png)](https://gemnasium.com/ben-eb/gulp-cat)
+
+> Echo file(s) to the console.
 
 Echo the contents of files to the console. Great for ASCII art, banners and important documentation. Inspired by https://npmjs.org/package/grunt-cat
 
 ## Installation
 
-Install via npm:
+Install via [npm](https://npmjs.org/package/gulp-cat):
 
 ```
 npm install gulp-cat --save-dev
