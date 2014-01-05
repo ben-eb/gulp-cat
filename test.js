@@ -7,7 +7,7 @@ var assert = require('assert'),
     es = require('event-stream'),
     gutil = require('gulp-util'),
     PassThrough = require('stream').PassThrough,
-    cat = require(__dirname + '/../index.js');
+    cat = require(__dirname + '/index.js');
 
 
 describe('gulp-cat', function() {
