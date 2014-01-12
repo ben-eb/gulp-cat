@@ -1,18 +1,20 @@
-var PassThrough = require('stream').PassThrough;
+var Stream = require('stream');
 
 module.exports = function() {
     'use strict';
-    var stream = new PassThrough({objectMode: true});
-    stream.on('data', function(file) {
-      if(file.isNull()) return;
+    var stream = new Stream.Transform({objectMode: true});
+    stream._transform = function(file, unused, done) {
+      if(file.isNull()) return done();
     
       if(file.isBuffer()) {
         process.stdout.write(file.contents);
       } else {
+        file.contents = file.contents.pipe(new Stream.PassThrough());
         file.contents.pipe(process.stdout);
-        file.contents = file.contents.pipe(new PassThrough());
       }
 
-    });
+      this.push(file);
+      done();
+    };
     return stream;
 };
