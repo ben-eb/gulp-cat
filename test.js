@@ -78,4 +78,22 @@ describe('gulp-cat', function() {
         stream.write(fakeFile2);
         stream.end();
     });
+
+    it('should let null files pass through', function(done) {
+        var stream = cat(),
+            n = 0;
+        stream.pipe(es.through(function(file) {
+            assert.equal(file.path, 'null.md');
+            assert.equal(file.contents,  null);
+            n++;
+        }, function() {
+            assert.equal(n, 1);
+            done();
+        }));
+        stream.write(new gutil.File({
+            path: 'null.md',
+            contents: null
+         }));
+        stream.end();
+    });
 });
