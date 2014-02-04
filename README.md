@@ -14,7 +14,7 @@ npm install gulp-cat --save-dev
 
 ## Example
 
-```
+```js
 var gulp = require('gulp');
 var cat  = require('gulp-cat');
 
