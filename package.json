@@ -1,6 +1,6 @@
 {
   "name": "gulp-cat",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Echo file(s) to the console.",
   "license": "MIT",
   "homepage": "https://github.com/ben-eb/gulp-cat",
