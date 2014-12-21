@@ -23,3 +23,11 @@ gulp.task('default', function() {
         .pipe(cat());
 });
 ```
+
+## Contributing
+
+Pull requests are welcome. If you add functionality, then please add unit tests to cover it.
+
+## License
+
+MIT © Ben Briggs
