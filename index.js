@@ -1,16 +1,14 @@
-/* jshint node:true */
-
 'use strict';
 
 var Stream = require('stream');
 
 module.exports = function() {
-    var stream = new Stream.Transform({ objectMode: true });
-    stream._transform = function(file, unused, done) {
+    var stream = new Stream.Transform({objectMode: true});
+    stream._transform = function(file, encoding, cb) {
         // When null just pass through
         if (file.isNull()) {
             this.push(file);
-            done();
+            cb();
             return;
         }
 
@@ -22,7 +20,7 @@ module.exports = function() {
         }
 
         this.push(file);
-        done();
+        cb();
     };
     return stream;
 };

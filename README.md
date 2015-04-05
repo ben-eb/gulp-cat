@@ -1,8 +1,9 @@
-# gulp-cat [![Build Status](https://travis-ci.org/ben-eb/gulp-cat.svg?branch=master)](https://travis-ci.org/ben-eb/gulp-cat) [![NPM version](https://badge.fury.io/js/gulp-cat.svg)](http://badge.fury.io/js/gulp-cat) [![Dependency Status](https://gemnasium.com/ben-eb/gulp-cat.svg)](https://gemnasium.com/ben-eb/gulp-cat)
+# [gulp][gulp]-cat [![Build Status](https://travis-ci.org/ben-eb/gulp-cat.svg?branch=master)][ci] [![NPM version](https://badge.fury.io/js/gulp-cat.svg)][npm] [![Dependency Status](https://gemnasium.com/ben-eb/gulp-cat.svg)][deps]
 
 > Echo file(s) to the console.
 
-Echo the contents of files to the console. Great for ASCII art, banners and important documentation. Inspired by https://npmjs.org/package/grunt-cat
+Echo the contents of files to the console. Great for ASCII art, banners and
+important documentation. Inspired by https://npmjs.org/package/grunt-cat
 
 ## Installation
 
@@ -26,8 +27,14 @@ gulp.task('default', function() {
 
 ## Contributing
 
-Pull requests are welcome. If you add functionality, then please add unit tests to cover it.
+Pull requests are welcome. If you add functionality, then please add unit tests
+to cover it.
 
 ## License
 
-MIT © Ben Briggs
+MIT © [Ben Briggs](http://beneb.info)
+
+[ci]:   https://travis-ci.org/ben-eb/gulp-cat
+[deps]: https://gemnasium.com/ben-eb/gulp-cat
+[gulp]: https://github.com/gulpjs/gulp
+[npm]:  http://badge.fury.io/js/gulp-cat
