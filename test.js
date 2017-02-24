@@ -92,7 +92,7 @@ describe('gulp-cat', function() {
         stream.write(new gutil.File({
             path: 'null.md',
             contents: null
-         }));
+        }));
         stream.end();
     });
 });
